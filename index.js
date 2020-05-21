@@ -56,4 +56,4 @@ MongoClient.connect('mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-
     app.post('/postdata', postdata)
 
 });
-app.listen(5000, () => console.log("server 5000 portunda calismaktadir"))
+app.listen(process.env.PORT || 5000, () => console.log("server 5000 portunda calismaktadir"))
