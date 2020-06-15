@@ -5,7 +5,7 @@ const app = express()
 //ara katmanda json datanın parse işlemi sağlandı
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-//mongo db ile bağlantı kuruldu
+//mongo db ile bağlantı kuruldu.
 MongoClient.connect('mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true', { useNewUrlParser: true, useUnifiedTopology: true }, function (err, db) {
     if (err) throw err;
     //calisacağimiz database tanımlandı
