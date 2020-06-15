@@ -6,7 +6,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 //mongo db ile bağlantı kuruldu
-MongoClient.connect('mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study', { useNewUrlParser: true, useUnifiedTopology: true }, function (err, db) {
+MongoClient.connect('mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true', { useNewUrlParser: true, useUnifiedTopology: true }, function (err, db) {
     if (err) throw err;
     //calisacağimiz database tanımlandı
     var dbo = db.db("getir-case-study");
